@@ -41,56 +41,53 @@
     <!-- Header -->
     <header class="masthead">
     <h3 class="title">Registro de renta</h3>
-      <div class="container">
+      <div class="container">           <!-- Formulario: Formulario -->
         <form action="registrarRenta.php" method="POST">
           <div class="panel panel-default" >
             <div class="panel-heading">       
-                <div class="row ">
-                  <label class="color" form="cliente">Nombre Completo del Cliente: </label>
+                <div class="row ">    <!-- Formulario: Nombre del cliente -->
+                  <label class="color" form="cliente"><FONT SIZE=5>Nombre Completo del Cliente:</FONT> </label>
                     <div class="col-md-12">
                       
-                      <input type="text" class="form-control" placeholder="Nombre"/> 
+                      <input id="text" type="text" class="form-control" placeholder="Nombre"/> 
                     </div>
                     
                   </div>
-                  <div class="center row ">
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                      <br>
-                      <label class="color" form="fecha">Fecha de renta: </label>
+                  <div class="center row pad-adjust">
+                    <div class="col-md-6 col-sm-12 col-xs-12 ">
+                      <br>    <!-- Formulario: Fecha de Renta -->
+                      <label class="color" form="fecha"><FONT SIZE=5> Fecha de renta: </FONT></label>
                       <input type="date" class="form-control"/>
-                    </div>  
-                  </div>
-                  <div class="center row ">
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                      <br>
-                      <label class="color" form="hora">Hora de renta </label>
-                      <input type="time" class="form-control"/>
-                    </div>  
-                  </div>
+                      
 
-                <div class="center row">
-                   <div class="col-md-3 col-sm-3 col-xs-3">
-                   <br>
-                      <span class="color" > Folio</span>
+                      <br>   <!-- Formulario: FOLIO -->
+                      <span class="color" ><FONT SIZE=5> Folio:</FONT> </span>
                         <form>
                           <br>
                           <select name="Folios" class="btn-block form-control">
-                            <option value="Folio1">Folio</option>
-                            <option value="Folio2">Folio</option>
-                            <option value="Folio3">Folio</option>
-                            <option value="Folio4">Folio</option>
+                            <option value="Folio1">Folio1</option>
+                            <option value="Folio2">Folio2</option>
+                            <option value="Folio3">Folio3</option>
+                            <option value="Folio4">Folio4</option>
                           </select>
-
                         </form>
+                    </div>  
+                    
+                    <div class="col-md-6 col-sm-12 col-xs-12 ">
+                     <br>    <!-- Formulario: Hora de Renta -->
+                      <label class="color" form="hora"><FONT SIZE=5>Hora de renta:</font> </label>
+                      <input type="time" class="form-control"/> 
                     </div>
+                  </div>
+
                   
-                </div>
-                <div class="row">
+                 <div class="row">
                   <div class="col-md-12 pad-adjust">
                     <div class="checkbox">
                       <label class="color">
                       <br>
-                        <input type="checkbox" checked class="text-muted"> Rueditas <a href="#"> learn how ?</a>
+                        <input type="checkbox" style="transform: scale(2)" checked class="text-muted"> <FONT SIZE=5>Rueditas</font>  <a href="#"> learn how?</a>
+                        <br>
                         <br>
                       </label>
                     </div>
@@ -118,7 +115,6 @@
 
    
     <!-- Bootstrap core JavaScript -->
-    <script src="scripts.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
